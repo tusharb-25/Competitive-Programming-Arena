@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Set</title>
+    <link rel="stylesheet" href="styles/problems.css">
+</head>
+<body>
+
+<header>
+    <h1>Competitive Programming Problems</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contests.html">Contests</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="problems-container">
+        <!-- 100 Problems Dynamically Generated -->
+        <script>
+            const problems = [
+                { title: "Two Sum", tags: ["Array", "HashMap"], link: "#" },
+                { title: "Longest Substring Without Repeating Characters", tags: ["String", "Sliding Window"], link: "#" },
+                { title: "Median of Two Sorted Arrays", tags: ["Binary Search", "Array"], link: "#" },
+                { title: "Reverse Linked List", tags: ["Linked List", "Recursion"], link: "#" },
+                { title: "Valid Parentheses", tags: ["Stack", "String"], link: "#" },
+                { title: "Merge Two Sorted Lists", tags: ["Linked List"], link: "#" },
+                { title: "Best Time to Buy and Sell Stock", tags: ["Array", "Dynamic Programming"], link: "#" },
+                { title: "Climbing Stairs", tags: ["Math", "Dynamic Programming"], link: "#" },
+                { title: "Find the Duplicate Number", tags: ["Array", "Binary Search"], link: "#" },
+                { title: "Word Break", tags: ["Trie", "Dynamic Programming"], link: "#" }
+            ];
+
+            for (let i = 1; i <= 10; i++) {
+                problems.push(...problems); // Repeat problems to reach 100
+            }
+
+            document.write(problems.map(problem => `
+                <div class="problem-box">
+                    <h3>${problem.title}</h3>
+                    <div class="tags">
+                        ${problem.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="problem-actions">
+                        <a href="${problem.link}" class="solve-btn">Solve</a>
+                        <button class="bookmark-btn">🔖 Bookmark</button>
+                        <button class="comment-btn">💬 Comment</button>
+                    </div>
+                </div>
+            `).join(''));
+        </script>
+    </section>
+</main>
+
+</body>
+</html>

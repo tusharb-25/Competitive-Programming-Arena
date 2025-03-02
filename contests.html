@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Programming Arena</title>
+    <link rel="stylesheet" href="styles/contests.css">
+</head>
+<body>
+
+    <header>
+        <h1>Competitive Programming Arena</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contests.html">Contests</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Upcoming Contests Section -->
+        <section class="contest-section upcoming-contests">
+            <h2>Upcoming Contests</h2>
+            <ul class="contest-list">
+                <li>Codeforces Round #XXX - <strong>March 5, 2025</strong></li>
+                <li>LeetCode Weekly Contest 380 - <strong>March 6, 2025</strong></li>
+                <li>AtCoder Beginner Contest 250 - <strong>March 7, 2025</strong></li>
+            </ul>
+        </section>
+
+        <!-- College Contests Section -->
+        <section class="contest-section college-contests">
+            <h2>College Contests</h2>
+            <ul class="contest-list">
+                <li>IIT BHU Coding Challenge - <strong>March 10, 2025</strong></li>
+                <li>Inter-IIT CP Battle - <strong>March 12, 2025</strong></li>
+                <li>Hackathon 2025 - <strong>March 15, 2025</strong></li>
+            </ul>
+        </section>
+
+        <!-- Recent Past Contests Section -->
+        <section class="contest-section recent-contests">
+            <h2>Your Recent Contests</h2>
+            <ul class="contest-list" id="recent-contests">
+                <li>Codeforces Round #XXX - <strong>Feb 28, 2025</strong></li>
+                <li>LeetCode Biweekly 79 - <strong>Feb 25, 2025</strong></li>
+                <li>AtCoder Grand Contest 60 - <strong>Feb 20, 2025</strong></li>
+                <li>Kick Start Google Round A - <strong>Feb 15, 2025</strong></li>
+                <li>CodeChef Long Challenge - <strong>Feb 10, 2025</strong></li>
+            </ul>
+            <button class="show-more" onclick="showMoreContests()">Show More</button>
+        </section>
+    </main>
+
+    <script>
+        function showMoreContests() {
+            let contestList = document.getElementById("recent-contests");
+            let newContests = [
+                "Codeforces Round #YYY - <strong>Feb 5, 2025</strong>",
+                "LeetCode Weekly Contest 378 - <strong>Jan 30, 2025</strong>",
+                "AtCoder Beginner Contest 240 - <strong>Jan 25, 2025</strong>"
+            ];
+
+            newContests.forEach(contest => {
+                let li = document.createElement("li");
+                li.innerHTML = contest;
+                contestList.appendChild(li);
+            });
+
+            document.querySelector(".show-more").style.display = "none"; // Hide button after loading more
+        }
+    </script>
+
+</body>
+</html>

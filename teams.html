@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Competitive Arena</title>
+    <link rel="stylesheet" href="styles/teams.css">
+</head>
+<body>
+
+    <header>
+        <h1>Competitive Programming Arena</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contests.html">Contests</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Public Teams Section -->
+        <section class="team-section public-teams">
+            <h2>Public Teams</h2>
+            <ul class="team-list">
+                <li>Team Alpha - 250 members <button class="join-team">Join</button></li>
+                <li>Code Warriors - 180 members <button class="join-team">Join</button></li>
+                <li>Bug Busters - 120 members <button class="join-team">Join</button></li>
+            </ul>
+        </section>
+        
+        <!-- Your Teams Section -->
+        <section class="team-section your-teams">
+            <h2>Your Teams</h2>
+            <ul class="team-list">
+                <li>Your Team 1 - Competitive Ninjas</li>
+                <li>Your Team 2 - Debug Masters</li>
+            </ul>
+        </section>
+        
+        <!-- Create a Team Section -->
+        <section class="team-section create-team">
+            <h2>Create a Team</h2>
+            <form>
+                <label for="team-name">Team Name:</label>
+                <input type="text" id="team-name" name="team-name" required>
+                
+                <label for="team-description">Description:</label>
+                <textarea id="team-description" name="team-description" required></textarea>
+                
+                <button type="submit">Create Team</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

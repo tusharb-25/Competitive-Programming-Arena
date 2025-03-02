@@ -1,0 +1,70 @@
+<!-- index.html - Coding Blogs as Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Programming Arena</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script defer src="scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Competitive Programming Arena</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contests.html">Contests</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Latest Coding Blogs</h2>
+        <div class="blog-container">
+            <!-- Adding 10 more blog boxes -->
+            <script>
+                const blogs = [
+                    { title: "Understanding Dynamic Programming", content: "Dynamic Programming is a technique used to solve problems by breaking them down into smaller subproblems...", link: "blog1.html" },
+                    { title: "Graph Algorithms - Basics to Advanced", content: "Graph algorithms are fundamental in computer science, helping to solve shortest paths, connectivity, and many more...", link: "blog2.html" },
+                    { title: "Mastering Binary Search", content: "Binary search is one of the most efficient search algorithms with O(log n) complexity...", link: "blog3.html" },
+                    { title: "Advanced Sorting Techniques", content: "Sorting algorithms like QuickSort and MergeSort are essential for efficient problem solving...", link: "blog4.html" },
+                    { title: "Segment Trees - A Powerful Tool", content: "Segment Trees are crucial in solving range queries efficiently...", link: "blog5.html" },
+                    { title: "Introduction to Fenwick Trees", content: "Fenwick Trees, also known as Binary Indexed Trees, are great for solving range queries efficiently...", link: "blog6.html" },
+                    { title: "Backtracking - Solving Complex Problems", content: "Backtracking is a brute-force technique used in problems like N-Queens, Sudoku Solver, and more...", link: "blog7.html" },
+                    { title: "Trie Data Structure Explained", content: "Trie is a powerful tree-based data structure used for efficient information retrieval...", link: "blog8.html" },
+                    { title: "Graph Traversal Algorithms", content: "Depth First Search (DFS) and Breadth First Search (BFS) are fundamental for exploring graphs...", link: "blog9.html" },
+                    { title: "Dijkstra's Algorithm - Shortest Path", content: "Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a weighted graph...", link: "blog10.html" },
+                    { title: "Topological Sorting in Graphs", content: "Topological sorting is useful in scheduling and dependency resolution problems...", link: "blog11.html" },
+                    { title: "Greedy Algorithms - Optimization Techniques", content: "Greedy algorithms make locally optimal choices to find global solutions in problems like Huffman coding...", link: "blog12.html" },
+                    { title: "Bit Manipulation Tricks", content: "Bitwise operations provide optimized solutions for problems involving binary representations...", link: "blog13.html" },
+                    { title: "Kruskal's Algorithm - Minimum Spanning Tree", content: "Kruskal’s algorithm helps in finding the minimum spanning tree in a graph efficiently...", link: "blog14.html" },
+                    { title: "Bellman-Ford Algorithm - Shortest Path", content: "Bellman-Ford algorithm finds the shortest path in graphs with negative weight edges...", link: "blog15.html" },
+                    { title: "Convex Hull Algorithm - Computational Geometry", content: "Convex Hull is an essential concept in computational geometry, used in collision detection and more...", link: "blog16.html" },
+                    { title: "String Matching Algorithms", content: "String searching algorithms like KMP and Rabin-Karp help in efficient pattern matching...", link: "blog17.html" },
+                    { title: "Dynamic Connectivity using DSU", content: "Disjoint Set Union (DSU) is a data structure that efficiently handles connectivity queries...", link: "blog18.html" },
+                    { title: "Network Flow and Max Flow Algorithms", content: "Network flow problems have applications in traffic management, computer networks, and more...", link: "blog19.html" },
+                    { title: "Game Theory for Competitive Programming", content: "Understanding game theory concepts can help in solving competitive programming problems like Nim Game...", link: "blog20.html" }
+                ];
+                
+                document.write(blogs.map(blog => `
+                    <div class="blog-box">
+                        <h3>${blog.title}</h3>
+                        <p>${blog.content}</p>
+                        <a href="${blog.link}">Read More</a>
+                        <div class="vote-section">
+                            <button class="upvote">⬆️</button>
+                            <span class="vote-count">0</span>
+                            <button class="downvote">⬇️</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </main>
+</body>
+</html>

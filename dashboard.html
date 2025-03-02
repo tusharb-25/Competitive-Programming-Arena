@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h1>Competitive Programming Arena</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contests.html">Contests</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-details">
+                <h2>User Name</h2>
+                <p>Username: <span>@your_username</span></p>
+                <p>Friends: <span>25</span></p>
+                <p>Your Teams: <span>2</span></p>
+                <p>Best Rating: <span>1875</span></p>
+                <p>College Rank: <span>32</span></p>
+                <p>Questions Solved: <span>120</span></p>
+            </div>
+            <div class="profile-picture">
+                <div class="picture-frame">
+                    <img id="profile-img" src="default-profile.png" alt="Profile Picture">
+                </div>
+                <input type="file" id="profile-upload" accept="image/*">
+                <label for="profile-upload" class="upload-btn">Change Picture</label>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Daily Streak Counter Section -->
+    <section class="streak-section">
+        <h2>🔥 Daily Streak</h2>
+        <p>Current Streak: <span class="streak-count">12</span> days</p>
+        <p>Best Streak: <span class="best-streak">28</span> days</p>
+        <p>Keep the streak alive! Solve a problem today! 🚀</p>
+    </section>
+
+
+    <!-- Social Links with "Flex It" Toggle -->
+    <div class="profile-section">
+
+    <!-- Social Links -->
+    <div class="social-links-container">
+        <h3>Social Links</h3>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/username" target="_blank">
+                <img src="linkedin-favicon.png" alt="LinkedIn">
+            </a>
+            <a href="https://leetcode.com/username" target="_blank">
+                <img src="leetcode-favicon.png" alt="LeetCode">
+            </a>
+            <a href="https://codeforces.com/profile/username" target="_blank">
+                <img src="codeforces-favicon.png" alt="Codeforces">
+            </a>
+            <a href="https://geeksforgeeks.org/username" target="_blank">
+                <img src="gfg-favicon.png" alt="GeeksforGeeks">
+            </a>
+        </div>
+
+        <!-- Toggle Switch -->
+        <div class="toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="toggle-slider">
+                    <span class="flex-it-text">Flex It</span>
+                </span>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Friends Section -->
+    <section class="friends-section">
+        <h2>Friends</h2>
+        <p>Click on a user to view their profile and add them as a friend.</p>
+        <button class="add-friend">+ Add Friend</button>
+    </section>
+
+    <!-- Upcoming Contests -->
+    <section class="upcoming-contests">
+        <h2>Upcoming Contests</h2>
+        <p>No upcoming contests at the moment.</p>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="recent-activity">
+        <h2>Recent Activity</h2>
+        <p>You solved 5 problems today! Keep up the streak! 🔥</p>
+    </section>
+
+</main>
+
+</body>
+</html>
